@@ -1,0 +1,94 @@
+
+<!--Css안에서 주석처리 할때는 /*ㅁㄴㅇㅁㄴ/*이렇게 함-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layoutp2</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        } 
+
+        #container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        #header {
+            margin-top: 20px;
+            height: 100px;
+            line-height: 100px;
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #center {
+            float: center;
+            margin: 10px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        #center p {
+            font-size: 15px;
+            width: 111%;
+            margin: 0 auto;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+    </style>
+
+    <body>
+        <div id="container">
+            <div id="header">
+                실습
+            </div>
+            <div id="center">
+                <h3>Four Col Process With Image</h3>
+                <p>
+                    if you need to display your creative work online with a robust canvas of options and with not
+                    a pixel out of palce, Mi Ul Kit is a great choice! It's undoubtedly a high-performance Ul Kit,
+                    which tells a story through imagery, fonts and layouts.
+
+                </p>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <img src="img_1.png" alt="cell" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="img_2.png" alt="plant" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="img_3.png" alt="thinking" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img_4.png" alt="drawing"
+                
+        
+            </div>
+                
+            
+        </div>
+
+    </body>
+</html>
